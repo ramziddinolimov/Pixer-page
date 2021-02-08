@@ -109,18 +109,23 @@ background-color: blue;
     }
 
     .prodact-section-images{
-        padding-top: 50px;
+        padding-top: 30px;
+        
     }
 .prodact-item:hover{
     transform: scale(1.1);
 }
     .prodact-item{
         width: 25%;
-        margin: 20px;
+        height: 250px;
+        margin: 30px;
         transition: .3s;
         padding: 0px;
-        box-shadow: 0 0 10px whitesmoke;
+        box-shadow: 0 0 10px rgba(12, 11, 11, .5);
         text-align: center;
+        padding-top: 20px;
+        border-radius: 10px;
+        
     }
 
     .prodact-section-link{
@@ -139,6 +144,14 @@ background-color: blue;
     border-radius: 5px ;
     transition: .3s;
     margin: 20px;
+    }
+
+    .prodact-title{
+        font-size: 20px;
+    }
+
+    .prodact-subtext{
+        padding-top: 20px;
     }
 
     .prodact-link:hover{
