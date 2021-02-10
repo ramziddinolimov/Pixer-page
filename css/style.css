@@ -8,6 +8,16 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+    border: 2px solid red;
+}
+.pixer>.container{
+    display: flex;
+    justify-content: space-between;
+}
+.m-icon{
+    display: none;
+    width: 20px
 }
 
 .container{
@@ -19,14 +29,21 @@ body{
     top: 0px;
     align-items: center;
     width: 100%;
+    z-index: 3;
     background-color: white;
     box-shadow: 0 0 5px gray;
+}
+.nav-link{
+    color: black;
 }
 .nav{
     display: flex;
     align-items: center;
     z-index: 3;
     justify-content: space-between;
+}
+.nav-text{
+    width: 100%;
 }
 
 .nav-list{
@@ -106,6 +123,7 @@ background-color: blue;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+
     }
 
     .prodact-section-images{
@@ -116,8 +134,8 @@ background-color: blue;
     transform: scale(1.1);
 }
     .prodact-item{
-        width: 25%;
-        height: 250px;
+        width: 320px;
+        
         margin: 30px;
         transition: .3s;
         padding: 0px;
@@ -198,19 +216,23 @@ background-color: blue;
         flex-direction: row-reverse;
         margin-top: 30px;
     }
+    .loyiha-section{
+        position: relative;
+    }
 
     .buyurtma-logo-link{
-        position: absolute;
-        left: 45%;
+      position: absolute;
+      top: 105%;
+      right: 40%;
         background-color: rgb(17, 122, 192);
         padding: 10px 20px;
         color: #ffffff;
         font-weight: bold;
         border-radius: 5px ;
         transition: .3s;
-        margin: 20px;
+    
         font-size: 20px;
-        margin-top: 50px;
+       
    
     }
 
@@ -311,6 +333,39 @@ background-color: blue;
         flex-direction: column;
         
     }
-
+    @media (max-width: 1000px){
+        .container{
+            width: 950px;
+    }
+    .pixer{
+        width: 100%;
+    }
+    .container>.biznes-section{
+        flex-direction: column;
+    }
+    .video{
+        margin-top: 20px;
+        width: 100%;
+    }
+    }
+    
+    @media (max-width: 900px){
+        .container{
+            width: 850px;
+    }
+    .pixer{
+        width: 100%;
+    }
+    .container>.biznes-section{
+        flex-direction: column;
+    }
+    .video{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .nav-link{
+        display: none;
+    
+    }
     
 
